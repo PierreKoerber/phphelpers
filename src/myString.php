@@ -20,9 +20,9 @@ class myString
         }
         
         public function hasSubstring($x){
-            if ( strpos( $this->s, $x) == false)
-                return false ;
-            return true ;
+            if ( strpos($this->s, $x) !== false)
+                return true ;
+            return false ;
         }
 
         public function replace($pattern, $newValue){
